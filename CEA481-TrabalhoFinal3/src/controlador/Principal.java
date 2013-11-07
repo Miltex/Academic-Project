@@ -6,7 +6,7 @@ import java.io.IOException;
 public class Principal {
 
 	public static void main( String args[] ) throws IOException {
-		//init
+		//alteração de teste... commit
 		new JanelaPrincipal( );
 		
 	}
