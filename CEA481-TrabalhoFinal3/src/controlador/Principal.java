@@ -8,7 +8,7 @@ public class Principal {
 	public static void main( String args[] ) throws IOException {
 		//Outra alteração de teste... commit testes
 		new JanelaPrincipal( );
-		//teste
+		//Novo push
 	}
 
 }
