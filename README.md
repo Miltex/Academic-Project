@@ -10,4 +10,4 @@ O projeto foi realizado na disciplina de Programação Orientada a Objetos com a
 Não foi utilizando editores (drag-and-drop). Todos componentes do sistema, tais como o swing, foram realizados
 "na unha" :D
 
-Este projeto pode ser utilizado para fins didático.
+Este projeto pode ser utilizado para fins didáticos.

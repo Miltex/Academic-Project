@@ -3,17 +3,18 @@ package persistencia;
 import java.io.IOException;
 
 public class Aluno{
+	
 	private String nome;
 	private char sexo;
 	private int matricula;
 	private double coeficiente;	
 	public final static int SIZE = 74;
 
-	//Construtor defoult sem parâmetros
+	//Construtor default
 	public Aluno(){
 	}
 	
-	//Construtor padrão com quatro atributos
+	//Construtor padrao com quatro atributos
 	public Aluno(String n, char s, double c, int m){
 		nome = n;
 		sexo = s;
@@ -21,13 +22,13 @@ public class Aluno{
 		matricula = gerarMatricula(m);	
 	}
 	
-	//Método usado para cadastrar alunos
+	//Mï¿½todo usado para cadastrar alunos
 	public void cadastraAluno(ManipulaArquivo a, Aluno aluno) throws IOException{
 		
 		a.adicionarRegistros(aluno);		
 	}
 	
-	//Método chamado pelo construtor para gerar a matrícula.
+	//Mï¿½todo chamado pelo construtor para gerar a matrï¿½cula.
 	private int gerarMatricula(int m){
 		
 		int mat = 40001;
@@ -37,20 +38,20 @@ public class Aluno{
 		return mat;
 	}
 	
-	//Método que consulta os dados de um aluno através de matrícula fornecida pelo usuário.
+	//Mï¿½todo que consulta os dados de um aluno atravï¿½s de matrï¿½cula fornecida pelo usuï¿½rio.
 	public Aluno consultaAluno(ManipulaArquivo a, int m) throws IOException{
 				
 		return a.consultaRegistro(m);
 	}
 	
-	//Método que altera os dados de um aluno correspondente ao número de matrícula.
+	//Mï¿½todo que altera os dados de um aluno correspondente ao nï¿½mero de matrï¿½cula.
 	public void alteraAluno(ManipulaArquivo a, Aluno aluno) throws IOException{
 		
 		a.alteraRegistro(aluno);
 		 	   
 	}
 	
-	//Método que imprime na tela os dados do aluno correspondente a opcao do usuário
+	//Mï¿½todo que imprime na tela os dados do aluno correspondente a opcao do usuï¿½rio
 	public String imprimeAluno(ManipulaArquivo a, int op, char opOrdenacao) throws IOException{
 		String texto = null;
 
@@ -60,7 +61,7 @@ public class Aluno{
 		return texto;
 	}
 	
-	//MÉTODOS SET E GET
+	//Mï¿½TODOS SET E GET
 	public String getNome() {
 		return nome;
 	}
