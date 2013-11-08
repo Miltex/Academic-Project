@@ -13,7 +13,7 @@ public class Controlador {
 	
 	private Controlador() throws FileNotFoundException {
 		arquivo = new ManipulaArquivo();
-		arquivo.abrirArquivo();		
+		arquivo.abrirArquivo();	
 	}
 	
 	public static Controlador getInstance() throws FileNotFoundException {

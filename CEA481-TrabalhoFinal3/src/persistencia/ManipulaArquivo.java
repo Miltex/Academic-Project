@@ -17,11 +17,8 @@ public class ManipulaArquivo{
 	}
 	
 	public int tamanhoArquivo() throws IOException{
-		int tamanho = 0;
 		
-			tamanho = (int) arquivo.length();
-		
-		return tamanho;
+		return (int) arquivo.length();
 	}
 	
 	public void fecharArquivo() throws IOException{
@@ -44,11 +41,11 @@ public class ManipulaArquivo{
 			arquivo.writeInt(aluno.getMatricula());
 			formataNome(aluno.getNome());
 			arquivo.writeDouble(aluno.getCoeficiente());		
-			arquivo.writeChar(aluno.getSexo());
-		
+			arquivo.writeChar(aluno.getSexo());	
 	}
 
 	private void formataNome(String nome) throws IOException{
+		
 		StringBuffer buffer = null;
 		if (nome != null)
 			buffer = new StringBuffer(nome);
@@ -100,7 +97,7 @@ public class ManipulaArquivo{
 	public String imprimiRegistros(int op, int opc) throws IOException{
 	
 
-	String texto = "MATRÍCULA\t\t              NOME\t\t\t                 COEFICIENTE\n\n";
+	String texto = "MATRï¿½CULA\t\t              NOME\t\t\t                 COEFICIENTE\n\n";
 	
 	if(arquivo != null){
 		int m = 40001;
