@@ -11,7 +11,11 @@ import javax.swing.JMenuItem;
 import javax.swing.JDesktopPane;
 import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
-
+/**
+ * 
+ * @author milton
+ * Classe que monta a janela principal do software
+ */
 public class JanelaPrincipal extends JFrame{
 	
 	private static final long serialVersionUID = 1L;
@@ -45,9 +49,11 @@ public class JanelaPrincipal extends JFrame{
 	private PainelListarNome painelListarNome;
 	private PainelListarCoeficiente painelListarCoeficiente;
 	private PainelListarMatricula painelListarMatricula;
-	
+	/*
+	 * Construtor
+	 */
 	public JanelaPrincipal() throws IOException{
-		super("GA (Gestão Acadêmica)");
+		super("GA (Gestï¿½o Acadï¿½mica)");
 		
 		desktop = new JDesktopPane();
 		painelConsultar = new PainelConsultar();
@@ -57,7 +63,7 @@ public class JanelaPrincipal extends JFrame{
 		painelListarMatricula = new PainelListarMatricula();
 		painelListarCoeficiente = new PainelListarCoeficiente();
 		
-		//Criação da barra de menu
+		//Criaï¿½ï¿½o da barra de menu
 		barraMenu = new JMenuBar();
 		menuCadastrar = new JMenu("Cadastrar");
 		menuConsultar = new JMenu("Consultar");
@@ -72,7 +78,7 @@ public class JanelaPrincipal extends JFrame{
 		barraMenu.add(menuListar);
 		barraMenu.add(menuAjuda);
 		
-		//Criação dos menus internos
+		//Criaï¿½ï¿½o dos menus internos
 		novoAluno = new JMenuItem("Novo Aluno");
 		menuCadastrar.add(novoAluno);
 		dadosAluno = new JMenuItem("Aluno");
@@ -181,7 +187,7 @@ public class JanelaPrincipal extends JFrame{
 		matricula.addActionListener(new ActionListener( ) {
 			public void actionPerformed( ActionEvent e ) {
 			// cria um JInternalFrame e adiciona no JDesktopPane
-				JInternalFrame internal = new JInternalFrame("Listar por Matrícula", false, true, false, false );
+				JInternalFrame internal = new JInternalFrame("Listar por Matrï¿½cula", false, true, false, false );
 				desktop.add(internal);
 				internal.add(painelListarMatricula);
 				internal.setSize(700,600);
@@ -197,7 +203,7 @@ public class JanelaPrincipal extends JFrame{
 					public void actionPerformed(ActionEvent click){
 						//remove(painelConteudo);
 						JOptionPane.showMessageDialog(null, "Este software foi elaborado para ser utilizado " +
-								"para cadastrar\nalunos, com o número de matrícula inicial de 40001.","Sobre o Sistema", JOptionPane.INFORMATION_MESSAGE );
+								"para cadastrar\nalunos, com o nï¿½mero de matrï¿½cula inicial de 40001.","Sobre o Sistema", JOptionPane.INFORMATION_MESSAGE );
 						repaint();
 					}
 				}
