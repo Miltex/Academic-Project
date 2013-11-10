@@ -1,7 +1,11 @@
 package persistencia;
 
 import java.io.IOException;
-
+/**
+ * 
+ * @author milton
+ * Classe do dominio da aplicação.
+ */
 public class Aluno{
 	
 	private String nome;
