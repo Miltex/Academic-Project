@@ -5,7 +5,11 @@ import java.io.IOException;
 
 import persistencia.Aluno;
 import persistencia.ManipulaArquivo;
-
+/**
+ * 
+ * @author milton
+ * Controlador das operações.
+ */
 public class Controlador {
 	
 	private static Controlador controlador = null;
