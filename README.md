@@ -14,4 +14,6 @@ Projeto realizado na correria do 1º período de SI/UFOP.
 Possui auto acoplamento entre as classes.)-:
 Mas, há um grau de coesão.(:
 
+O pessoal que desejar melhorar o código. Pode fazer um fork do projeto.:D
+
 Este projeto pode ser utilizado para fins didáticos.
